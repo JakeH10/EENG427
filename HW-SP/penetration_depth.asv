@@ -1,0 +1,13 @@
+function d_p = penetration_depth(wavelength, object)
+%PENETRATION_DEPTH find the penetraction depth of an RF wave
+%   wavelength: wavelength of the signal
+%   
+%   d_lf: dielectric loss factor
+%   d_p: penetraction depth
+
+
+
+d_p = wavelength / (sqrt(2) * pi * (sqrt(1 + (tan(d_lf))^2) - 1)^(1/2));
+
+end
+
